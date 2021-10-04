@@ -1,0 +1,6 @@
+@define-color accent_bg_color @red_3;
+
+headerbar {
+	border-bottom: solid 2px;
+	border-image: linear-gradient(to right, #FC5822, #E71F63) 1;
+}

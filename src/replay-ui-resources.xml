@@ -2,8 +2,11 @@
 <gresources>
 
 <gresource prefix="/com/github/replaydev/Replay">
+	<file alias="video-item.ui">widgets/video-item.ui</file>
+
 	<file alias="app-window.ui">app-window.ui</file>
 	<file>style.css</file>
+	<file>style-dark.css</file>
 </gresource>
 
 </gresources>

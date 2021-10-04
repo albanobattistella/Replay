@@ -6,6 +6,27 @@
 	<property name="title" translatable="yes">Replay</property>
 	<property name="default-width">1024</property>
 	<property name="default-height">600</property>
+
+	<child>
+		<object class="GtkBox">
+			<property name="orientation">vertical</property>
+
+			<child>
+				<object class="AdwHeaderBar" />
+			</child>
+
+			<child>
+				<object class="GtkScrolledWindow">
+					<property name="vexpand">yes</property>
+					<child>
+						<object class="GtkListView" id="trending_list" />
+					</child>
+				</object>
+			</child>
+
+		</object>
+	</child>
+
 </template>
 
 </interface>

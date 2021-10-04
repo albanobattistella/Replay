@@ -1,4 +1,6 @@
 replay_sources = files (
+	'view-models/trending-view-model.vala',
+
 	'views/view.vala',
 
 	'app.vala',
@@ -15,10 +17,12 @@ replay_sources += gnome.compile_resources (
 
 
 replay_deps = [
+	gio_dep,
 	gtk_dep,
 	gee_dep,
 	config_dep,
 	adwaita_dep,
+	videos_repository_dep,
 ]
 
 

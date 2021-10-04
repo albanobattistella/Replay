@@ -51,7 +51,7 @@ class Rpy.App : Adw.Application {
 
 
 		// Register app actions
-		this.add_action_entries (action_entries, this);
+		this.add_action_entries (this.action_entries, this);
 		this.set_accels_for_action ("app.quit", { "<Ctrl>Q" });
 
 

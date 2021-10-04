@@ -69,9 +69,16 @@ gnome   = import ('gnome')
 i18n    = import ('i18n')
 
 
-# Dependencies
+# General dependencies
+gio_dep = dependency ('gio-2.0', version: '>=2.70')
+gee_dep = dependency ('gee-0.8', version: '>=0.20')
+
+# Library dependencies
+soup_dep      = dependency ('libsoup-3.0', version: '>=3.0')
+json_glib_dep = dependency ('json-glib-1.0', version: '>=1.0')
+
+# Replay dependencies
 gtk_dep     = dependency ('gtk4', version: '>=4.4')
-gee_dep     = dependency ('gee-0.8', version: '>=0.20')
 adwaita_dep = dependency ('libadwaita-1', version: '>=1.0')
 config_dep  = valac.find_library ('config', dirs: vapidir)
 
@@ -88,6 +95,7 @@ meson.add_install_script ('build-aux/meson/post-install.py')
 
 # Subfolders
 subdir ('data')
+subdir ('lib')
 subdir ('src')
 subdir ('po')
 
